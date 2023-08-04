@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Content } from './Content'
 import { Sidebar } from './Sidebar'
+import { Tabination } from '@/Components/Tabination'
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       </header>
       <div className="relative w-full">
         <Sidebar />
-        <Content />
+        <Tabination/>
       </div>
     </main>
   )

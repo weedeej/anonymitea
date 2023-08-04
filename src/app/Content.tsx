@@ -25,7 +25,7 @@ const DUMMY_POSTS: Post[] = [
 ]
 export function Content() {
   return (
-    <div className="flex flex-col w-full flex-1 pt-20 gap-4 items-center px-4 md:px-0">
+    <div className="flex flex-col w-full flex-1 pt-4 gap-4 items-center px-4 md:px-0">
       <PostForm/>
       {
         DUMMY_POSTS.map((post) => (
