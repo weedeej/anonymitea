@@ -50,16 +50,16 @@ export function Sidebar() {
       </div>
       <div className="flex flex-col gap-2">
         <div className="flex flex-row gap-2 justify-center">
-          <button className="w-full rounded bg-green-700 py-2 px-4 flex flex-row gap-2 justify-center items-center">
+          <button className="w-full rounded bg-slate-800 py-2 px-4 flex flex-row gap-2 justify-center items-center">
             <div dangerouslySetInnerHTML={{ __html: icons.download.toSvg({ width: 16, height: 16 }) }} />
             Save Data
           </button>
-          <button className="w-full rounded bg-indigo-800 py-2 px-4 flex flex-row gap-2 justify-center items-center">
+          <button className="w-full rounded bg-slate-800 py-2 px-4 flex flex-row gap-2 justify-center items-center">
             <div dangerouslySetInnerHTML={{ __html: icons.upload.toSvg({ width: 16, height: 16 }) }} />
             Load Data
           </button>
         </div>
-        <button className="rounded bg-red-700 py-2 px-4 flex flex-row gap-2 justify-center items-center">
+        <button className="rounded bg-red-800 py-2 px-4 flex flex-row gap-2 justify-center items-center">
           <div dangerouslySetInnerHTML={{ __html: icons["trash-2"].toSvg({ width: 16, height: 16 }) }} />
           Delete Data
         </button>
