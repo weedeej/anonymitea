@@ -19,7 +19,7 @@ export function Sidebar() {
     }
   ]
   return (
-    <div className="fixed left bg-slate-950 w-80 h-full max-h-max text-white hidden md:flex flex-col p-4 pt-20 gap-4 justify-between">
+    <div className="fixed left bg-slate-950 w-80 h-full max-h-max text-white hidden xl:flex flex-col p-4 pt-20 gap-4 justify-between">
       <div className="flex flex-col gap-8">
         <div className="flex flex-row gap-2">
           <div id={`user_${userId}`} className="flex flex-row p-2 flex-1 items-center bg-slate-800 rounded-full gap-2">
