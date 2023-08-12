@@ -4,6 +4,7 @@ import { Content } from "@/app/Content"
 import { icons } from "feather-icons"
 import Link from "next/link"
 import { useState } from "react"
+import { SearchInput } from "../SearchInput"
 
 const TABS = [
   {
@@ -33,10 +34,7 @@ export function Tabination() {
   return (
     <div className="flex flex-col gap-2 pt-20 items-center px-4">
       <div className="flex flex-row gap-4 justify-between md:max-w-2xl max-w-full w-full flex-wrap">
-        <div className="flex flex-row gap-2 justify-start items-center border rounded-full h-12 md:w-auto w-full px-2">
-          <div dangerouslySetInnerHTML={{ __html: icons.search.toSvg({ stroke: "white", width: 20, height: 20 }) }} />
-          <input placeholder="Search User ID" className="flex flex-none bg-inherit text-white focus:border-none focus:outline-none" />
-        </div>
+        <SearchInput placeholder="Search User ID" icon="search"/>
         <div className="flex flex-row gap-4">
           {
             TABS.map(({ icon, link, key }, index) => (
