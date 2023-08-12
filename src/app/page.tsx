@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Content } from './Content'
 import { Sidebar } from './Sidebar'
 import { Tabination } from '@/Components/Tabination'
+import { Channels } from './Channels'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <h1 className="font-bold text-2xl text-white">Anonymi<span className="text-green-700">tea</span></h1>
       </header>
       <div className="relative w-full">
+        <Channels />
         <Sidebar />
         <Tabination/>
       </div>
